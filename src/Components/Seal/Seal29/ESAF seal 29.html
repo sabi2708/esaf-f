@@ -11,18 +11,20 @@
       outline: none;
       background: transparent;
       display: inline-block;
-      color:black;
-    }
-    .seal29role:empty:before {
-      content: "___________";
+      color: black;
+      min-width: 150px; 
+  }
+
+  .seal29role:empty:before {
+      content: "Enter name";
       color: gray;
-    }
+  }
   </style>
 </head>
 <body>
   <div >
     <div class="seal29stamp">
-      <span id="sealRole" class="seal29role" ></span>
+      <span id="sealRole" class="seal29role" contenteditable="true"></span>
       <div class="seal29bank-name">Esaf Bank Anakkatty</div>
       <div class="seal29branch">Branch: 92880 92671</div>
     </div>
