@@ -1,3 +1,17 @@
+.seal28stamp {
+  width: auto;
+  min-width: 120px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 5px;
+  background: transparent; /* Make background transparent */
+  border: none; /* Remove the outer border */
+}
+
 .seal28name {
   font-weight: bold;
   font-size: 12pt;
@@ -5,27 +19,13 @@
   display: inline-block;
   white-space: nowrap;
   border: none;
-  outline: none; /* Removes focus outline */
+  outline: none; /* Removes inner focus rectangle */
   background: transparent;
   color: black;
   text-align: center;
 }
 
-.seal28name:focus {
-  outline: none; /* Prevents focus rectangle */
-  border: none;
-}
-
-.seal28stamp {
-  width: auto;
-  min-width: 120px;
-  height: 20px;
-  border: 1px solid lightgray;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  padding: 5px;
-  background: white;
+.seal28emp-id {
+  font-size: 10pt;
+  font-weight: bold;
 }
