@@ -6,7 +6,7 @@
   align-items: center;
   font-family: Arial, sans-serif;
   padding: 5px;
-  height: auto;
+  height: 17mm;
   background: transparent;
   border: none; /* 🔥 Removes the outer rectangle */
 }
