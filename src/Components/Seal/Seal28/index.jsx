@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useEffect } from 'react';
 function Seal28({ branchName }) {
   useEffect(() => {
-    import('../Seal28/styles.css');
+    import('../Seal28/styles28.css');
   }, []);
 
   const [name, setName] = useState("");

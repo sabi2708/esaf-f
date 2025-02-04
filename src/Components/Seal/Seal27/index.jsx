@@ -3,7 +3,7 @@ import React from "react";
 import { useEffect } from 'react';
 function Seal27({ branchName }) {
   useEffect(() => {
-    import('../Seal27/styles.css');
+    import('../Seal27/styles27.css');
   }, []);
   return (
     <div className="seal27box">

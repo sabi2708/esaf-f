@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useEffect } from 'react';
 function Seal29({ branchName }) {
   useEffect(() => {
-    import('../Seal29/styles.css');
+    import('../Seal29/styles29.css');
   }, []);
   const [role, setRole] = useState("");
 

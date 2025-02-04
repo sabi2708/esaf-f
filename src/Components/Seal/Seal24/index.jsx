@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 const Seal24 = ({ branchName }) => {
   useEffect(() => {
-    import('../Seal24/styles.css');
+    import('../Seal24/styles24.css');
   }, []);
   return (
     <div className="seal24box">

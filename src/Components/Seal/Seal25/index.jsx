@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from 'react';
 function Seal25({ branchName }) {
   useEffect(() => {
-    import('../Seal25/styles.css');
+    import('../Seal25/styles25.css');
   }, []);
 
   return (
