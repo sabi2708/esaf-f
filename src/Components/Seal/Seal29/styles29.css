@@ -10,10 +10,31 @@
       height: 11mm;
     }
 
+    
     .seal29role {
-      font-weight: bold;
+      border: none;
+      outline: none;
+      background: transparent;
+      display: inline-block;
+      color: black;
+      font-weight: 700;
       font-size: 10px;
-    }
+      position: relative;
+      text-align: left; 
+      direction: ltr; 
+  }
+
+  .seal29role:empty:before {
+      content: "Enter name";
+      color: gray;
+      pointer-events: none; 
+  }
+
+ 
+  .seal29role:focus:before {
+      content: "";
+  }
+  
 
     .seal29bank-name {
       font-size: 9.5px;
