@@ -1,5 +1,5 @@
     .seal29stamp {
-      width:fit-content; /* Adjust as per your needs */
+      width:fit-content; 
       border: 2px solid lightgrey;
       display: flex;
       flex-direction: column;
