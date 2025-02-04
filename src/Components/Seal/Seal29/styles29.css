@@ -12,16 +12,18 @@
 
     .seal29role {
       font-weight: bold;
-      font-size: 14px;
+      font-size: 10px;
     }
 
     .seal29bank-name {
-      font-size: 12px;
+      font-size: 9.5px;
       text-align: center;
+      font-weight: bold;
     }
 
     .seal29branch {
-      font-size: 12px;
+      font-size: 9.5px;
+      font-weight: bold;
     }
 
     

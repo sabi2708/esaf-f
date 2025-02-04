@@ -22,7 +22,7 @@ body {
     background: transparent;
     display: inline-block;
     font-family: Arial, sans-serif;
-    font-size: 12pt;
+    font-size: 10pt;
     font-weight: bolder;
     text-align: center;
     color: black;
@@ -30,12 +30,12 @@ body {
     margin: 0;
 }
 .seal30dynamic-name:empty:before {
-    content: "Enter name";
+    content: '____________';
     color: gray;
 }
 .seal30designation, .seal30emp-no, .seal30branch {
     font-family: Arial, sans-serif;
-    font-size: 9pt;
+    font-size: 8pt;
     font-weight: bold;
     text-align: center;
     margin: 0;
