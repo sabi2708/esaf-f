@@ -7,12 +7,12 @@ function Seal30() {
   return (
     <div className="seal30stamp-container">
       <p
+        id="sealName"
         className="text seal30dynamic-name"
         contentEditable
         suppressContentEditableWarning
         ref={nameRef}
-      >
-      </p>
+      ></p>
       <p className="text seal30designation">Manager</p>
       <p className="text seal30emp-no">Emp. No. 12859</p>
       <p className="text seal30branch">Anakkatty Branch</p>

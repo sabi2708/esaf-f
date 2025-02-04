@@ -30,7 +30,7 @@ body {
     margin: 0;
 }
 .seal30dynamic-name:empty:before {
-    content: '____________';
+    content: 'Enter name';
     color: gray;
 }
 .seal30designation, .seal30emp-no, .seal30branch {
