@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./styles30.css";
+import "../Seal30/styles30.css";
 
 function Seal30() {
   const nameRef = useRef(null);
