@@ -10,14 +10,23 @@ function Seal30({ branchName }) {
 
   return (
     <div className="seal30stamp-container">
-      <p
-        className="text seal30dynamic-name"
-        contentEditable
-        suppressContentEditableWarning
-        onInput={(e) => setName(e.currentTarget.textContent)}
-      >
-        {name || "Enter name"}
-      </p>
+      <span
+          className="text seal30dynamic-name"
+          contentEditable
+          suppressContentEditableWarning
+          ref={nameRef}
+          onInput={(e) => {
+            // Preserve cursor position
+            const range = document.createRange();
+            const selection = window.getSelection();
+            range.selectNodeContents(e.target);
+            range.collapse(false);
+            selection.removeAllRanges();
+            selection.addRange(range);
+          }}
+        >
+          Enter Name
+        </span>
       <p className="text seal30designation">Manager</p>
       <p className="text seal30emp-no">Emp. No. 12859</p>
       <p className="text seal30branch">Anakkatty Branch</p>

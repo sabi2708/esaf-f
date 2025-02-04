@@ -10,13 +10,22 @@ function Seal29({ branchName }) {
   return (
     <div>
       <div className="seal29stamp">
-        <span
+      <span
           className="seal29role"
           contentEditable
           suppressContentEditableWarning
-          onInput={(e) => setRole(e.currentTarget.textContent)}
+          ref={nameRef}
+          onInput={(e) => {
+            // Preserve cursor position
+            const range = document.createRange();
+            const selection = window.getSelection();
+            range.selectNodeContents(e.target);
+            range.collapse(false);
+            selection.removeAllRanges();
+            selection.addRange(range);
+          }}
         >
-          {role || "Enter name"}
+          Enter Name
         </span>
         <div className="seal29bank-name">Esaf Bank Anakkatty</div>
         <div className="seal29branch">Branch: 92880 92671</div>
