@@ -30,7 +30,7 @@
   color: gray;
   pointer-events: none;
 }
-
+ 
 /* Remove focus outline */
 .seal29role:focus {
   outline: none;
