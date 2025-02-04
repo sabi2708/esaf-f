@@ -10,7 +10,7 @@ const PageContextProvider = (props) => {
 
     const currency = "₹"
 
-    const backendUrl = "https://esaf-project-756b.onrender.com"
+    const backendUrl = "https://esaf-b.onrender.com"
     const navigate = useNavigate();
 
     const [login, setLogin] = useState(false)
