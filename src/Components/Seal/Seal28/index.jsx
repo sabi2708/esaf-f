@@ -9,7 +9,7 @@ function Seal28({ branchName }) {
   const [name, setName] = useState("");
 
   return (
-    <div className="seal-container">
+    <div className="seal28box">
       <div className="seal28stamp">
         <span
           className="seal28name"
@@ -17,7 +17,7 @@ function Seal28({ branchName }) {
           suppressContentEditableWarning
           onInput={(e) => setName(e.currentTarget.textContent)}
         >
-          {name || "_____________"}
+          {name || "Enter name"}
         </span>
         <div className="seal28emp-id">Emp. Id. 12859</div>
       </div>
