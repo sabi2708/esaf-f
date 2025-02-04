@@ -1,37 +1,35 @@
- .seal28stamp {
-      width: fit-content;
-      height: 11mm;
-      border: 1px solid lightgray;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-family: Arial, sans-serif;
-    }
-
-    .seal28name {
-      font-weight: bold;
-      font-size: 12pt;
-    }
-
-    .seal28emp-id {
-      font-size: 10pt;
-      font-weight: bold;
-    }
-
-    
-.seal-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid lightgray;
-    padding: 5px;
-    width: fit-content;
-    background: white;
+.seal28stamp {
+  width: auto;
+  min-width: 120px; /* Ensures space for typing */
+  height: 20px;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 5px;
 }
-.text {
-    margin: 2px 0;
-    text-align: center;
+
+.seal28name {
+  font-weight: bold;
+  font-size: 12pt;
+  min-width: 100px; /* Ensures space to type */
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: black;
+  text-align: center;
+}
+
+.seal28name:empty:before {
+  content: "_____________";
+  color: gray;
+}
+
+.seal28emp-id {
+  font-size: 10pt;
+  font-weight: bold;
 }
