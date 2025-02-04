@@ -1,71 +1,59 @@
-    .seal29stamp {
-      width:fit-content; 
-      border: 2px solid lightgrey;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-family: Arial, sans-serif;
-      padding: 0px;
-      height: 11mm;
-    }
-
-    
-    .seal29role {
-      border: none;
-      outline: none;
-      background: transparent;
-      display: inline-block;
-      color: black;
-      font-weight: 700;
-      font-size: 10px;
-      position: relative;
-      text-align: left; 
-      direction: ltr; 
-      unicode-bidi: plaintext;
-  }
-
-    .seal29role:empty::before {
-      content: "Enter name";
-      color: gray;
-      pointer-events: none; 
+.seal29stamp {
+  width: fit-content;
+  border: 2px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 5px;
+  height: 11mm;
+  background: transparent;
 }
 
-/* Hide placeholder when focus */
-  .seal29role:focus:before {
-       content: "";
+.seal29role {
+  border: none;
+  outline: none;
+  background: transparent;
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+  font-size: 10px;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 80px;
 }
 
-/* Align text to the right when not empty */
-   .seal29role:not(:empty) {
-       text-align: right;
-}   
-    .seal29bank-name {
-      font-size: 9.5px;
-      text-align: center;
-      font-weight: bold;
-    }
+/* Placeholder text */
+.seal29role:empty:before {
+  content: "Enter name";
+  color: gray;
+  pointer-events: none;
+}
 
-    .seal29branch {
-      font-size: 9.5px;
-      font-weight: bold;
-    }
+/* Remove focus outline */
+.seal29role:focus {
+  outline: none;
+}
 
-    
-    
-    
+.seal29bank-name {
+  font-size: 9.5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.seal29branch {
+  font-size: 9.5px;
+  font-weight: bold;
+}
+
 .seal-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid lightgray;
-    padding: 5px;
-    width: fit-content;
-    background: white;
-}
-.text {
-    margin: 2px 0;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  width: fit-content;
+  background: white;
 }
