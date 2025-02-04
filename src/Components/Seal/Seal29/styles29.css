@@ -1,14 +1,14 @@
 .seal29stamp {
   width: fit-content;
-  border: 2px solid lightgrey;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
   padding: 5px;
-  height: 11mm;
+  height: auto;
   background: transparent;
+  border: none; /* 🔥 Removes the outer rectangle */
 }
 
 .seal29role {
