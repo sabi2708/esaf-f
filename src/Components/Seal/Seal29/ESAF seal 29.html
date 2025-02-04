@@ -12,13 +12,15 @@
       background: transparent;
       display: inline-block;
       color: black;
-      min-width: 150px; 
-  }
+      min-width: 150px; /* Adjust width as needed */
+      position: relative;
+        }
 
-  .seal29role:empty:before {
+    .seal29role:empty:before {
       content: "Enter name";
       color: gray;
-  }
+      pointer-events: none; /* Prevents selection */
+        }
   </style>
 </head>
 <body>
