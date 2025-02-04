@@ -25,18 +25,21 @@
       unicode-bidi: plaintext;
   }
 
-  .seal29role:empty:before {
+    .seal29role:empty::before {
       content: "Enter name";
       color: gray;
       pointer-events: none; 
-  }
+}
 
- 
+/* Hide placeholder when focus */
   .seal29role:focus:before {
-      content: "";
-  }
-  
+       content: "";
+}
 
+/* Align text to the right when not empty */
+   .seal29role:not(:empty) {
+       text-align: right;
+}   
     .seal29bank-name {
       font-size: 9.5px;
       text-align: center;
