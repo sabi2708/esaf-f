@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useRef, useEffect } from "react";
 import "../Seal28/styles28.css";
 
 function Seal28() {
-  const [name, setName] = useState("");
+  const nameRef = useRef(null);
+
+  useEffect(() => {
+    if (nameRef.current) {
+      nameRef.current.focus(); // Auto-focus on load
+    }
+  }, []);
 
   return (
     <div className="seal-container">
@@ -11,10 +17,18 @@ function Seal28() {
           className="seal28name"
           contentEditable
           suppressContentEditableWarning
-          onInput={(e) => setName(e.currentTarget.textContent)}
-          style={{ display: "inline-block", minWidth: "100px" }}
+          ref={nameRef}
+          onInput={(e) => {
+            // Preserve cursor position
+            const range = document.createRange();
+            const selection = window.getSelection();
+            range.selectNodeContents(e.target);
+            range.collapse(false);
+            selection.removeAllRanges();
+            selection.addRange(range);
+          }}
         >
-          {name.trim() ? name : ""}
+          Enter Name
         </span>
         <div className="seal28emp-id">Emp. Id. 12859</div>
       </div>
