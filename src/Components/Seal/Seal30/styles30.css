@@ -22,7 +22,7 @@ body {
     background: transparent;
     display: inline-block;
     font-family: Arial, sans-serif;
-    font-size: 10pt;
+    font-size: 9pt;
     font-weight: bolder;
     text-align: center;
     color: black;
@@ -35,7 +35,7 @@ body {
 }
 .seal30designation, .seal30emp-no, .seal30branch {
     font-family: Arial, sans-serif;
-    font-size: 8pt;
+    font-size: 7pt;
     font-weight: bold;
     text-align: center;
     margin: 0;
