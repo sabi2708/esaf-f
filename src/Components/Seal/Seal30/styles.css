@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.seal30stamp-container {
+    width: auto;
+    height: 17mm;
+    border: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.seal30dynamic-name {
+    border: none;
+    outline: none;
+    background: transparent;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+.seal30dynamic-name:empty:before {
+    content: "Enter name";
+    color: gray;
+}
+.seal30designation, .seal30emp-no, .seal30branch {
+    font-family: Arial, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.seal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 5px;
+    width: fit-content;
+    background: white;
+}
+.text {
+    margin: 2px 0;
+    text-align: center;
+}

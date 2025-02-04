@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubber Stamp</title>
+  <link rel="stylesheet" href="styles28.css">
+  <style>
+    .seal28name {
+      border: none;
+      outline: none;
+      background: transparent;
+      display: inline-block;
+      color:black;
+    }
+    .seal28name:empty:before {
+      content: "Enter name";
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="seal28box">
+    <div class="seal28stamp">
+      <span id="sealName" class="seal28name" contenteditable="true"></span>
+      <div class="seal28emp-id">Emp. Id. 12859</div>
+    </div>
+    
+  </div>
+</body>
+</html>

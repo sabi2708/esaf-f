@@ -1,0 +1,44 @@
+    .seal29stamp {
+      width:fit-content; /* Adjust as per your needs */
+      border: 2px solid lightgrey;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      padding: 0px;
+      height: 11mm;
+    }
+
+    .seal29role {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .seal29bank-name {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .seal29branch {
+      font-size: 12px;
+    }
+
+    
+    
+    
+.seal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 5px;
+    width: fit-content;
+    background: white;
+}
+.text {
+    margin: 2px 0;
+    text-align: center;
+}
